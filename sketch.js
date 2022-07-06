@@ -12,10 +12,10 @@ var gameState = PLAY;
 
 var distance=0;
 var gameOver, restart;
-
+var select_obstacles=Math.round(Math.random(1,3));
 function preload(){
   pathImg = loadImage("Road.png");
-  girlImg = loadAnimation("girl running.png");
+  //girlImg = loadAnimation("girl running.png");
   
   bombImg = loadAnimation("bomb.jpg");
   stickImg = loadAnimation("stick.jpg");
@@ -78,7 +78,7 @@ function draw() {
     
   
   
-  var select_obsacles = Math.round(random(1,3));
+  
   
   if (World.frameCount % 150 == 0) {
     if (select_obstacles == 1) {
